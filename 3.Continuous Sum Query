@@ -1,0 +1,24 @@
+class Solution:
+    # @param A : integer
+    # @param B : list of list of integers
+    # @return a list of integers
+    def solve(self, A, B):
+        s = 0
+        e = 0
+        v = 0
+        k = [0]*A
+        for i in range(len(B)):
+            s = B[i][0]
+            e = B[i][1]
+            v = B[i][2]
+            if s <= (A):
+                k[s-1] += v
+            if e <= (A-1):
+                k[e] += (-v)
+        # print(k)
+        sum = 0
+        for i in range(len(k)):
+            sum += k[i]
+            k[i] = sum
+        # print(k)
+        return k
