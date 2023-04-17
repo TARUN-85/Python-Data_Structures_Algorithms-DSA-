@@ -1,0 +1,28 @@
+# solution 1
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        string = ""
+        for val in digits:
+            string += str(val)
+        val = int(string) + 1
+        val = str(val)
+        A = []
+        for i in val:
+            A.append(i)
+            
+        return A
+        
+      
+#solution2
+class Solution:
+    # @param A : list of integers
+    # @return a list of integers
+    def plusOne(self, A):
+        a = ''
+        b = []
+        for i in A:
+            a += str(i)
+        ans = str(int(a)+1)
+        k = list(map(int,list(ans)))
+
+        return k
