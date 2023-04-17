@@ -1,0 +1,7 @@
+A = [10,-5,7,8,-1,2,-20,5]
+ans = float('-inf')
+sum = 0
+for val in A:
+    sum += val
+    ans = max(ans,sum)
+print(ans)
