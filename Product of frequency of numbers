@@ -1,0 +1,11 @@
+A = [3,2,1,1,3,5,5,5]
+B = dict()
+for i in range(len(A)):
+    if A[i] not in B:
+        B[A[i]] = 1
+    else:
+        B[A[i]] += 1
+ans = 1
+for k in dict.values(B):
+    ans *= k
+print(ans)
