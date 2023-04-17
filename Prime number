@@ -1,0 +1,24 @@
+############## Checking for a Number is prime or Not
+a = 4
+cnt= 0
+for i in range(2,int(a**0.5)):
+    if a%i==0:
+        cnt +=1
+if cnt == 0:
+    print("Its a prime Number")
+else:
+    print('Not a Prime Number')
+    
+    
+############## Print prime number between the given range:
+
+a = 100
+A = []
+for i in range(2,a+1):
+    cnt= 0
+    for k in range(2,int(i**0.5)+1):
+        if i%k==0:
+            cnt +=1
+    if cnt == 0:
+        A.append(i)
+print(A)
