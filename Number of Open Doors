@@ -1,0 +1,9 @@
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        count = 0
+        for i in range(int(A**0.5)):
+            if i**2 <= A:
+                count += 1
+        return count
